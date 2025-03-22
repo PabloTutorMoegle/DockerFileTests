@@ -1,10 +1,10 @@
-## DockerFileTests
+# DockerFileTests
 
 Image building
 ```
 docker build -t <image-name> .
 ```
-# Execute image
+## Execute image
 ```
 docker run <image-name>
 ```
