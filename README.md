@@ -12,3 +12,7 @@ For interactive images the command is:
 ```
 docker run -it <image-name>
 ```
+## Execute docker compose 
+```
+docker-compose up -d
+```
