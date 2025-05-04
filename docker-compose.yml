@@ -6,6 +6,7 @@ services:
       - "6379:6379"
     volumes:
       - redis_data:/data
+    command: ["redis-server", "--appendonly", "yes"] # Habilita snapshots per a backups
 
   mongodb:
     image: mongo:latest
@@ -16,6 +17,21 @@ services:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
       - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
+
+  backup:
+    image: alpine:latest
+    volumes:
+      - redis_data:/backup/redis
+      - mongodb_data:/backup/mongodb
+    command: >
+      sh -c "
+      while true; do
+        mkdir -p /backup/redis /backup/mongodb &&
+        tar -czf /backup/redis/backup_$(date +%Y%m%d%H%M%S).tar.gz /backup/redis &&
+        tar -czf /backup/mongodb/backup_$(date +%Y%m%d%H%M%S).tar.gz /backup/mongodb &&
+        sleep 3600;
+      done"
+    restart: always
 
 volumes:
   redis_data:
