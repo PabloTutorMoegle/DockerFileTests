@@ -29,7 +29,7 @@ services:
         mkdir -p /backup/redis /backup/mongodb &&
         tar -czf /backup/redis/backup_$(date +%Y%m%d%H%M%S).tar.gz /backup/redis &&
         tar -czf /backup/mongodb/backup_$(date +%Y%m%d%H%M%S).tar.gz /backup/mongodb &&
-        sleep 3600;
+        sleep 86400;
       done"
     restart: always
 
