@@ -46,7 +46,7 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 963FA27710458545
 sudo apt install grafana
 ```
 6- Iniciar y habilitar Grafana
-````
+```
 sudo systemctl enable grafana-server
 sudo systemctl start grafana-server
 ```
