@@ -56,4 +56,6 @@ sudo systemctl start grafana-server
 <p>1- Es la primera vez que alguien entra por tanto el nombre de usuario es "admin" y la contraseña tambien (si este es el caso cuando entres te pedira una contraseña nueva).</p>
 <p>2- Si no eres el primer@ en entrar deberas poner de nombre de usuario "admin" y de contraseña la que se escogiese cuando se entro por primera vez.</p>
 
-Markdown by Pablo de Vicente-Tutor
+
+
+<p align=center> Markdown by Pablo de Vicente-Tutor </p>
