@@ -51,9 +51,9 @@ sudo systemctl enable grafana-server
 sudo systemctl start grafana-server
 ```
 7- Entrar<br />
-    <p>Ya deberia estar intalado todo correctamente aqui que podemos acceder a http://<ip_de_tu_servidor>:3000 </p><br />
-    <p>Si todo va bien deberias ver un inicio de sesion para Grafana, ahora hay dos opciones: </p><br />
-        <p>1- Es la primera vez que alguien entra por tanto el nombre de usuario es "admin" y la contraseña tambien (si este es el caso cuando entres te pedira una contraseña nueva).</p><br />
-        <p>2- Si no eres el primer@ en entrar deberas poner de nombre de usuario "admin" y de contraseña la que se escogiese cuando se entro por primera vez.</p>
+<p>    Ya deberia estar intalado todo correctamente aqui que podemos acceder a http://<ip_de_tu_servidor>:3000 </p>
+<p>    Si todo va bien deberias ver un inicio de sesion para Grafana, ahora hay dos opciones: </p>
+<p>        1- Es la primera vez que alguien entra por tanto el nombre de usuario es "admin" y la contraseña tambien (si este es el caso cuando entres te pedira una contraseña nueva).</p>
+<p>        2- Si no eres el primer@ en entrar deberas poner de nombre de usuario "admin" y de contraseña la que se escogiese cuando se entro por primera vez.</p>
 
 Markdown by Pablo de Vicente-Tutor
